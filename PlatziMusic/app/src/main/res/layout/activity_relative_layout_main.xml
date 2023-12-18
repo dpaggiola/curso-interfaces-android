@@ -5,44 +5,44 @@
 
     <ImageView
         android:id="@+id/ivLoginLogo"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
         android:layout_width="160dp"
         android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:src="@drawable/logo" />
 
     <EditText
         android:id="@+id/etLoginUsername"
-        android:layout_margin="12dp"
-        android:drawablePadding="12dp"
+        style="@style/AppTheme.EditTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivLoginLogo"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_below="@id/ivLoginLogo"
+        android:layout_margin="12dp"
         android:drawableStart="@drawable/vector_person"
-        android:hint="@string/hint_user"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content" />
+        android:hint="@string/hint_user" />
 
     <EditText
         android:id="@+id/etLoginPassword"
+        style="@style/AppTheme.EditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@id/etLoginUsername"
-        android:layout_margin="12dp"
-        android:drawablePadding="12dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
+        android:layout_margin="12dp"
         android:drawableStart="@drawable/vector_lock"
-        android:hint="@string/hint_password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:hint="@string/hint_password" />
 
     <Button
-        android:layout_alignParentBottom="true"
-        android:background="@color/colorPrimary"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true"
-        android:layout_margin="12dp"
-        android:text="@string/button_login"
         android:layout_width="0dp"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="12dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/button_login" />
 
 </RelativeLayout>
