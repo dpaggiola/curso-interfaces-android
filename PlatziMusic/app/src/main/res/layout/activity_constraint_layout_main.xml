@@ -3,14 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linearLayout"
-    android:theme="@style/AppTheme.Red"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme.Red">
 
     <ImageView
         android:id="@+id/ivLoginLogo"
-        android:layout_width="160dp"
-        android:layout_height="120dp"
+        android:layout_width="@dimen/width_logo"
+        android:layout_height="@dimen/height_logo"
         android:layout_marginTop="4dp"
         android:src="@drawable/logo"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,7 +21,6 @@
         android:id="@+id/etLoginUsername"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="12dp"
         android:drawableStart="@drawable/vector_person"
         android:drawablePadding="12dp"
         android:hint="@string/hint_user"
@@ -33,7 +32,6 @@
         android:id="@+id/etLoginPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="12dp"
         android:drawableStart="@drawable/vector_lock"
         android:drawablePadding="12dp"
         android:hint="@string/hint_password"
